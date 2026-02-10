@@ -15,11 +15,17 @@ build/
 .env.test.local
 .env.production.local
 
-# IDE
-.vscode/
+# IDE - exclude personal settings but allow shared project configs
+.vscode/settings.json
+.vscode/launch.json
 .idea/
 *.swp
 *.swo
+
+# Optionally include these VS Code files:
+# .vscode/extensions.json  - recommended extensions
+# .vscode/tasks.json       - build/run tasks
+# .vscode/launch.json      - debugger configs
 
 # OS
 .DS_Store
